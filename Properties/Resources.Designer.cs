@@ -73,6 +73,16 @@ namespace SpacemarketSimulator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
+        internal static byte[] bg {
+            get {
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
+        /// </summary>
         internal static byte[] down_galaxyfire1 {
             get {
                 object obj = ResourceManager.GetObject("down_galaxyfire1", resourceCulture);

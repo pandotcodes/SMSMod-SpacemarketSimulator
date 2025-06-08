@@ -12,7 +12,7 @@ namespace SpacemarketSimulator
         public void Update()
         {
             transform.localPosition = localPosition;
-            transform.localPosition = position + Plugin.Player.transform.position;
+            transform.localPosition = position + (Plugin.MoveSkyboxWithPlayer.Value ? Plugin.Player.transform.position : new Vector3());
             transform.localScale = localScale;
             transform.eulerAngles = eulerAngles;
         }

@@ -1,0 +1,7 @@
+﻿using HarmonyLib;
+using TurnTheGameOn.SimpleTrafficSystem;
+
+namespace SpacemarketSimulator.Patches
+{
+    [HarmonyPatch(typeof(AITrafficLight), "EnableYellowLight")] public static class AITrafficLight_EnableYellowLight_Patch { public static void Postfix(AITrafficLight __instance) => __instance.DisableAllLights(); }
+}
